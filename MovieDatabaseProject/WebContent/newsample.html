@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Movie Hub,complete movie info</title>
+<link rel="stylesheet" href="newsamplestyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<style>
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ed3330;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: #333;
+  color: white;
+  letter-spacing: 2px;
+}
+.container1 .btn1 {
+  position: absolute;
+  top: 124%;
+  left: 6%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ed3330;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container1 .btn1:hover {
+  background-color: #333;
+  color: white;
+  letter-spacing: 2px;
+}
+.mrq
+{
+  margin-top: 7%;
+}
+.mrq1
+{
+  margin-top: 4%;
+}
+</style>
+
+<div class="header">
+  <h1>Movie Hub</h1>
+  <p>A complete <b>Movie</b> information website.</p>
+</div>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="searchactor.html">Search Actors</a>
+      <a href="searchmovie.html">Search Movie</a>
+      <a href="showmovierating.jsp">Fans Rating</a>
+      <a href="rating.html">Rate Movie</a>
+      <a href="index.html">Logout</a>
+      <a href="adminlogin.html" class="right">Admin</a>
+    </div>
+    <form action="showmovie.jsp">
+		<div class="container">
+			<button class="btn">Movies!</button>
+		</div>
+	</form>
+
+	<marquee class="mrq" behavior="scroll" direction="right">
+    <div class="row"> 
+        <div class="column">
+          <div class="card">
+            <img src="movie1.jpg">
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="movie2.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="movie3.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="movie4.jpg">
+            </div>
+        </div>
+         <div class="column">
+            <div class="card">
+              <img src="movie5.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="movie6.jpg">
+            </div>
+        </div>
+  
+  
+     </div>
+   </marquee>
+       <form action="showactor.jsp">
+     		<div class="container1">
+				<button class="btn1">Actors!</button>
+			</div>
+		</form>
+     <marquee class="mrq1"behavior="scroll" direction="right">
+    <div class="row"> 
+        <div class="column">
+          <div class="card">
+            <img src="act1.jpg">
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="act2.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="act3.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="act4.jpg">
+            </div>
+        </div>
+         <div class="column">
+            <div class="card">
+              <img src="act5.jpg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="act10.jpg">
+            </div>
+        </div>
+  
+  
+     </div>
+   </marquee>
+
+<div class="footer">
+    <q>If you’re good at something, never do it for free.</q>
+    <p class="author">-The Joker - Heath Ledger</p>
+</div>
+
+</body>
+</html>

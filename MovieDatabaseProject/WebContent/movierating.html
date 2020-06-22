@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<title>Rate Movie</title>
+  
+</head>
+<body>
+<style>
+  @charset "ISO-8859-1";
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(Backimg.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+.loginBox
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  height: 420px;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
+h2
+{
+  margin: 0;
+  padding: 0 0 20px;
+  color: #efed40;
+  text-align: center;
+}
+h3
+{
+  color: #efed40;
+}
+h1
+{
+  color: #efed40;
+  text-align: center;
+}
+.loginBox p
+{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.loginBox input
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+::placeholder
+{
+  color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #ff267e;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+  background: #efed40;
+  color: #262626;
+}
+.loginBox a
+{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+}
+.rating {
+    display: inline-block;
+}
+
+.rating:not(:checked) > input {
+    display:none;
+}
+
+.rating:not(:checked) > label {
+    float: right;
+    width: 28px;
+    padding: 0 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #ddd;
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -moz-filter: saturate(0);
+    -o-filter: saturate(0);
+    
+}
+
+.rating:not(:checked) > label:before {
+    content: url("http://i.imgur.com/1dT6Fai.png") ' ';
+}
+
+.rating > input:checked ~ label {
+    filter: saturate(1);
+    -webkit-filter: saturate(1);
+  -moz-filter: saturate(1);
+    -o-filter: saturate(1);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    filter: hue-rotate(-50deg);
+    -webkit-filter: hue-rotate(-50deg);
+  -moz-filter: hue-rotate(-50deg);
+    -o-filter:hue-rotate(-50deg);
+    
+}
+
+
+</style>
+
+   <h1 style="color: white;">Enter Movie Id and Give Rating</h1>
+<div class="loginBox">
+  <form style="width: 300px; margin: 10px;"method="post" action="movierating.jsp">
+
+    <p>UserID:</p>
+    <input type="text" name="userid" required>
+    <br>
+    <p>Movie ID:</p>
+    <input type="number" name="mov_id" required>
+    <br>
+     <p>Rate:</p>
+     <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="Great">5 stars</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="Good">4 stars</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="Okay">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="Bad">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="Very Bad">1 star</label>
+      </div>
+ 
+    <br>
+    <input type="submit" value="submit">
+  </form>
+</div>
+
+</body>
+</html>

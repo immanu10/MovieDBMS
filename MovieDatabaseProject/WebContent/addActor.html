@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>add actor page</title>
+      <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+<style>
+
+</style>
+
+   <h1 style="color: white;">Add Actors To DataBase</h1>
+<div class="loginBox">
+<form style="width: 300px; margin: 10px;"method="post" action="addActor.jsp">
+
+<p>Actor Id:</p>
+<input type="number" name="act_id" required>
+<br>
+<p>First Name:</p>
+<input type="text" name="act_fname" required>
+<br>
+ <p>Last Name:</p>
+<input type="text" name="act_lname">
+<br>
+<p>Gender:</p>
+<select id="act_gender" name="act_gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+
+</body>
+</html>

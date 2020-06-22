@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add movie page</title>
+ <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+   <h1 style="color: white;">Add Movies to DataBase</h1>
+<div class="loginBox">
+<form style="width: 300px; margin: 10px;"method="post" action="addMovies.jsp">
+
+<p>Movie Id:</p>
+<input type="number" name="mov_id" required>
+<br>
+<p>Movie Title:</p>
+<input type="text" name="mov_title" required>
+<br>
+ <p>Movie Year:</p>
+<input type="month" name="mov_year">
+<br>
+
+<p>Movie Language:</p>
+<select id="mov_lang" name="mov_lang" required>
+      <option value="kannada">Kannada</option>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+    </select>
+    <br>
+<p>Director by</p>
+<input type="number" name="dir_id" required>
+
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
